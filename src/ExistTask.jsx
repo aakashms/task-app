@@ -17,7 +17,7 @@ function ExistTask() {
   useEffect(() => {
     const fetchTask = async () => {
       try {
-        const response = await fetch(`http://localhost:4000/tasklist/${id}`);
+        const response = await fetch(`https://task-server-qwgr.onrender.com/tasklist/${id}`);
         const data = await response.json();
         setlist(data);
       } catch (err) {
@@ -42,7 +42,7 @@ function ExistTask() {
   const handleSubmit = async(e)=>{
     e.preventDefault()
     try{
-      const response = await axios.put( `http://localhost:4000/task/${id}`, list[0]);
+      const response = await axios.put( `https://task-server-qwgr.onrender.com/task/${id}`, list[0]);
       console.log('resonse ::',response);
       if(response.status===200){
         !isDel? toast.info("Task Edited Successfully!"):""
@@ -60,7 +60,7 @@ function ExistTask() {
   const handleDelete = async()=>{
     isDel = true;
     try{
-      const response = await axios.delete( `http://localhost:4000/task/${id}`);
+      const response = await axios.delete( `https://task-server-qwgr.onrender.com/task/${id}`);
       console.log('resonse for delete:',response);
       if(response.status===200){
         toast.error("Task Deleted Successfully!")

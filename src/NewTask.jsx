@@ -12,7 +12,7 @@ function NewTask() {
   const [description, setDescription] = useState("");
   const [due, setDue] = useState("");
   const navigate = useNavigate();
-  const API_URL = 'http://localhost:4000'
+  const API_URL = 'https://task-server-qwgr.onrender.com'
 
 
   const handleSubmit = async(e)=>{

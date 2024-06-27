@@ -11,7 +11,7 @@ function Home() {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const response = await fetch("http://localhost:4000/tasklist");
+        const response = await fetch("https://task-server-qwgr.onrender.com/tasklist");
         const data = await response.json();
         setlist(data);
       } catch (err) {
