@@ -1,0 +1,41 @@
+
+
+#due{
+    padding: 0.5rem;
+}
+
+#title{
+    padding: 0.5rem;
+    font-size: medium;
+    margin-bottom: 1rem;
+}
+
+#description{
+    padding: 0.5rem;
+    height: 40vh;
+    font-size: large;
+    margin-bottom: 1rem;
+}
+
+.btn-container{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.close{
+    background-color: red;
+    font-size:medium;
+}
+.ok{
+    background-color: rgb(29, 210, 29);
+    font-size:medium;
+}
+
+a{
+    color: white;
+}
+a:hover{
+    scale: 102%;
+}
