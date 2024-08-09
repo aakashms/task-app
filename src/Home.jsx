@@ -8,7 +8,7 @@ import { FaPlus } from "react-icons/fa";
 function Home() {
   const [list, setlist] = useState([]);
 
-  useEffect(() => {
+  
     const fetchTasks = async () => {
       try {
         const response = await fetch("https://task-server-qwgr.onrender.com/tasklist");
@@ -20,7 +20,7 @@ function Home() {
     };
 
     fetchTasks();
-  }, []);
+  
 
   console.log(list);
 
